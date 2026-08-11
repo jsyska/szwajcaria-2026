@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Szwajcaria 2026 — plan wycieczki</title>
+<meta name="description" content="Plan wycieczki po Szwajcarii, 14–17 sierpnia 2026: Bazylea, Kandersteg, Grindelwald, Lauterbrunnen, Brienzersee, Lucerna, Zurych." />
+<meta name="theme-color" content="#0b243d" />
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="icons/icon-192.png" />
+<link rel="apple-touch-icon" href="icons/icon-192.png" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="app-header">
+  <p class="app-header__eyebrow">Plan wycieczki</p>
+  <h1 class="app-header__title">Szwajcaria: Bazylea → Berner Oberland</h1>
+  <p class="app-header__subtitle" id="trip-subtitle">Ładowanie…</p>
+  <p class="app-header__dates" id="trip-dates"></p>
+</header>
+
+<nav class="day-tabs" id="day-tabs" aria-label="Wybór dnia"></nav>
+
+<main id="day-panels"></main>
+
+<section class="section section--accommodation" id="accommodation-section">
+  <h2 class="section__title">🛏️ Noclegi</h2>
+  <div class="accommodation-list" id="accommodation-list"></div>
+</section>
+
+<section class="section section--info">
+  <details id="info-details">
+    <summary class="section__title info-summary">ℹ️ Ważne info <span class="chevron">▾</span></summary>
+    <div class="info-content" id="info-content"></div>
+  </details>
+</section>
+
+<footer class="app-footer">
+  <p>Zbudowano statycznie · dane z <code>data.json</code> · mapy © OpenStreetMap</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="app.js"></script>
+</body>
+</html>
