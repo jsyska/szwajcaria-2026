@@ -462,13 +462,15 @@ h1, h2, h3 {
   margin-top: 0.15rem;
 }
 
-/* ---------------- Info (collapsible) ---------------- */
+/* ---------------- Collapsible sections (bookings / packing / info) ---------------- */
 
+.section--bookings,
+.section--packing,
 .section--info {
   padding-top: 0;
 }
 
-details#info-details {
+.details-card {
   background: #fff;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
@@ -525,6 +527,140 @@ details[open] .chevron {
 
 .info-content li {
   margin-bottom: 0.45rem;
+}
+
+/* ---------------- Bookings (bilety i rezerwacje) ---------------- */
+
+.bookings-content {
+  margin-top: 1rem;
+}
+
+.bookings-content h3 {
+  font-size: 0.95rem;
+  color: var(--navy-900);
+  margin-bottom: 0.5rem;
+}
+
+.bookings-content h3:not(:first-child) {
+  margin-top: 1.2rem;
+}
+
+.booking-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.booking-item {
+  border: 1px solid rgba(11, 36, 61, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.7rem;
+  background: var(--cream-50);
+}
+
+.booking-item__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.booking-item__name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.booking-item__cost {
+  flex: none;
+  font-size: 0.76rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  white-space: nowrap;
+}
+
+.booking-item__cost--paid {
+  background: var(--amber-warn-bg);
+  color: var(--amber-warn-text);
+}
+
+.booking-item__cost--free {
+  background: var(--turquoise-100);
+  color: var(--turquoise-600);
+}
+
+.booking-item__action {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin-top: 0.3rem;
+}
+
+/* ---------------- Packing list ---------------- */
+
+.packing-content {
+  margin-top: 1rem;
+}
+
+.packing-category {
+  margin-bottom: 1.2rem;
+}
+
+.packing-category:last-child {
+  margin-bottom: 0;
+}
+
+.packing-category h3 {
+  font-size: 0.95rem;
+  color: var(--navy-900);
+  margin-bottom: 0.5rem;
+}
+
+.packing-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.packing-item label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.packing-item label:active {
+  background: var(--cream-100);
+}
+
+.packing-item input[type="checkbox"] {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 0.1rem;
+  accent-color: var(--turquoise-500);
+}
+
+.packing-item span {
+  font-size: 0.88rem;
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.packing-item--checked span {
+  color: var(--ink-soft);
+  text-decoration: line-through;
 }
 
 .weather-list {

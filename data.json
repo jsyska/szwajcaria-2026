@@ -344,5 +344,131 @@
     "Nocleg 14-16.08: Hotel Kreuz w Leissigen (nad Thunersee) — potwierdzone, check-in 16:00-22:00, check-out 08:00-11:00",
     "Nocleg 16-17.08 w Bazylei: budżet 400-600 zł, decyzja otwarta między okolicą lotniska a centrum/starówką",
     "Iseltwald: opłata 5 CHF za wejście na molo, w środku dnia bardzo tłoczno — rano wyraźnie spokojniej"
+  ],
+  "packing_list": [
+    {
+      "category": "Dokumenty i portfel",
+      "icon": "📄",
+      "items": [
+        "Dowód osobisty lub paszport (dla obu osób)",
+        "Bilety lotnicze i karty pokładowe (wylot i powrót z Basel EuroAirport)",
+        "Prawo jazdy — niezbędne do odbioru wynajętego auta na lotnisku",
+        "Karty płatnicze oraz trochę gotówki w CHF — drobne przydadzą się m.in. na wejście na molo w Iseltwald (5 CHF)",
+        "Potwierdzenia rezerwacji — auto, Hotel Kreuz oraz wykupiony slot na wjazd gondolą na Oeschinensee"
+      ]
+    },
+    {
+      "category": "Ubrania (system \"na cebulkę\")",
+      "icon": "🧥",
+      "items": [
+        "Wygodne buty sportowe lub lekkie trekkingowe — kluczowe na płaskich ścieżkach wokół Oeschinensee i metalowych pomostach First Cliff Walk",
+        "Lekka kurtka przeciwdeszczowa (hardshell/wiatrówka) — w niedzielę na trasie Lucerna/Bazylea szansa na opady sięga 45-65%",
+        "Bluza lub polar — wyjazd kolejką na Grindelwald First na wysokość 2168 m oznacza odczuwalnie niższe temperatury",
+        "Lżejsze ubrania (t-shirty, krótkie spodenki) — piątek w Bazylei tuż po lądowaniu zapowiada się upalnie (nawet ok. 33-37°C)",
+        "Koszula / coś fajniejszego — na wyjście do restauracji na kolację",
+        "Bielizna i skarpetki (zaplanowane na 4 dni)"
+      ]
+    },
+    {
+      "category": "Elektronika",
+      "icon": "🔌",
+      "items": [
+        "Telefony + ładowarki (z odpowiednimi kablami)",
+        "Pojemny powerbank — zdjęcia, nawigacja w aucie i szukanie szlaków szybko zjedzą baterię",
+        "Adapter do gniazdek (typ J) — płaskie, europejskie wtyczki z reguły pasują do szwajcarskich gniazdek, ale jeśli macie sprzęt z grubą, okrągłą wtyczką, potrzebna będzie przejściówka"
+      ]
+    },
+    {
+      "category": "Kosmetyki i apteczka",
+      "icon": "🧴",
+      "items": [
+        "Krem z wysokim filtrem UV — słońce w górach łapie znacznie szybciej",
+        "Okulary przeciwsłoneczne",
+        "Kosmetyki bazowe — pamiętajcie o limicie płynów do 100 ml w przezroczystej torebce, jeśli macie tylko bagaż podręczny",
+        "Kompaktowa apteczka — plastry na otarcia od butów (bardzo ważne w górach!), środki przeciwbólowe"
+      ]
+    }
+  ],
+  "booking_info": [
+    {
+      "day": "Sobota — Grindelwald First",
+      "items": [
+        {
+          "name": "Gondola Grindelwald → First",
+          "cost": "ok. 76 CHF/os (bilet w dwie strony)",
+          "action": "Rekomendacja: kupić online wcześniej na grindelwaldfirst.com, żeby w sezonie ominąć kolejkę do kas na stacji.",
+          "paid": true
+        },
+        {
+          "name": "First Cliff Walk",
+          "cost": "Bezpłatny — wliczony w bilet na gondolę",
+          "action": "",
+          "paid": false
+        },
+        {
+          "name": "Adventure Package (zipline / First Flyer)",
+          "cost": "60-109 CHF, opcjonalnie",
+          "action": "Nie jest konieczny.",
+          "paid": true
+        }
+      ]
+    },
+    {
+      "day": "Sobota — Iseltwald",
+      "items": [
+        {
+          "name": "Wejście na molo",
+          "cost": "5 CHF",
+          "action": "Płatne na miejscu przy kołowrotku (karta lub drobne w CHF).",
+          "paid": true
+        },
+        {
+          "name": "Spacer po wiosce i nad jeziorem",
+          "cost": "Bezpłatny",
+          "action": "",
+          "paid": false
+        }
+      ]
+    },
+    {
+      "day": "Sobota — Giessbach",
+      "items": [
+        {
+          "name": "Parking",
+          "cost": "ok. 15 CHF",
+          "action": "Płatny na miejscu.",
+          "paid": true
+        },
+        {
+          "name": "Zabytkowa kolejka Giessbachbahn",
+          "cost": "Płatna na miejscu",
+          "action": "Podejście pieszo obok wodospadu jest również możliwe (za darmo).",
+          "paid": true
+        }
+      ]
+    },
+    {
+      "day": "Pozostałe punkty — bezpłatne",
+      "items": [
+        {
+          "name": "Lauterbrunnen / Staubbachfall",
+          "cost": "Bezpłatny",
+          "action": "Płacicie jedynie za parking w centrum wioski.",
+          "paid": false
+        },
+        {
+          "name": "Bachalpsee",
+          "cost": "Bezpłatny szlak",
+          "action": "Szlak pieszy z górnej stacji First jest w pełni darmowy.",
+          "paid": false
+        },
+        {
+          "name": "Lucerna, Zurych, Bazylea",
+          "cost": "Bezpłatne",
+          "action": "Spacer po starówkach i przejście mostem Kapellbrücke są bezpłatne.",
+          "paid": false
+        }
+      ]
+    }
   ]
 }

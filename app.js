@@ -26,6 +26,8 @@
     renderTabs();
     renderDayPanels();
     renderAccommodation();
+    renderBookingInfo();
+    renderPackingList();
     renderInfo();
 
     const firstDay = state.data.days[0].id;
@@ -244,6 +246,88 @@
         <div class="${optionsClass}">${options}</div>
       `;
       container.appendChild(card);
+    });
+  }
+
+  function renderBookingInfo() {
+    const container = document.getElementById("bookings-content");
+    const groups = state.data.booking_info || [];
+    container.innerHTML = groups
+      .map(
+        (group) => `
+      <h3>${escapeHtml(group.day)}</h3>
+      <ul class="booking-list">
+        ${group.items
+          .map(
+            (item) => `
+          <li class="booking-item">
+            <div class="booking-item__top">
+              <span class="booking-item__name">${escapeHtml(item.name)}</span>
+              <span class="booking-item__cost ${item.paid ? "booking-item__cost--paid" : "booking-item__cost--free"}">${escapeHtml(item.cost)}</span>
+            </div>
+            ${item.action ? `<span class="booking-item__action">${escapeHtml(item.action)}</span>` : ""}
+          </li>`
+          )
+          .join("")}
+      </ul>`
+      )
+      .join("");
+  }
+
+  const PACKING_STORAGE_KEY = "szwajcaria2026-packing-checked";
+
+  function loadPackingChecked() {
+    try {
+      return JSON.parse(localStorage.getItem(PACKING_STORAGE_KEY)) || {};
+    } catch (err) {
+      return {};
+    }
+  }
+
+  function savePackingChecked(checked) {
+    try {
+      localStorage.setItem(PACKING_STORAGE_KEY, JSON.stringify(checked));
+    } catch (err) {
+      // localStorage unavailable (private mode etc.) — silently skip persistence
+    }
+  }
+
+  function renderPackingList() {
+    const container = document.getElementById("packing-content");
+    const categories = state.data.packing_list || [];
+    const checked = loadPackingChecked();
+
+    container.innerHTML = categories
+      .map(
+        (cat, catIndex) => `
+      <div class="packing-category">
+        <h3>${cat.icon ? escapeHtml(cat.icon) + " " : ""}${escapeHtml(cat.category)}</h3>
+        <ul class="packing-list">
+          ${cat.items
+            .map((item, itemIndex) => {
+              const id = `pack-${catIndex}-${itemIndex}`;
+              const isChecked = !!checked[id];
+              return `
+            <li class="packing-item${isChecked ? " packing-item--checked" : ""}">
+              <label>
+                <input type="checkbox" data-packing-id="${id}" ${isChecked ? "checked" : ""} />
+                <span>${escapeHtml(item)}</span>
+              </label>
+            </li>`;
+            })
+            .join("")}
+        </ul>
+      </div>`
+      )
+      .join("");
+
+    container.querySelectorAll("input[data-packing-id]").forEach((input) => {
+      input.addEventListener("change", () => {
+        const current = loadPackingChecked();
+        current[input.dataset.packingId] = input.checked;
+        savePackingChecked(current);
+        input.closest(".packing-item").classList.toggle("packing-item--checked", input.checked);
+      });
     });
   }
 
