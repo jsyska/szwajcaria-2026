@@ -118,6 +118,13 @@
       ? `<a class="stop-card__link" href="${escapeAttr(stop.link)}" target="_blank" rel="noopener noreferrer">Więcej info</a>`
       : "";
 
+    const ticketHtml = stop.ticket_image
+      ? `<a class="stop-card__ticket" href="${escapeAttr(stop.ticket_image)}" target="_blank" rel="noopener noreferrer">
+           <img src="${escapeAttr(stop.ticket_image)}" alt="Bilet – ${escapeAttr(stop.name)}" loading="lazy" />
+           <span>🎫 Bilet kupiony — pokaż QR</span>
+         </a>`
+      : "";
+
     li.innerHTML = `
       ${mediaHtml}
       <div class="stop-card__body">
@@ -127,6 +134,7 @@
         </div>
         ${descriptionHtml}
         ${notesHtml}
+        ${ticketHtml}
         ${linkHtml}
       </div>
     `;
@@ -202,7 +210,18 @@
     container.innerHTML = "";
     state.data.accommodation.forEach((city) => {
       const card = document.createElement("div");
-      card.className = "accommodation-city";
+      const isConfirmed = !!city.confirmed;
+      card.className = "accommodation-city" + (isConfirmed ? " accommodation-city--confirmed" : " accommodation-city--open");
+
+      const statusBadge = isConfirmed
+        ? `<span class="accommodation-status accommodation-status--confirmed">✅ Zarezerwowane</span>`
+        : `<span class="accommodation-status accommodation-status--open">🤔 Decyzja otwarta</span>`;
+
+      const notePlHtml = city.note_pl
+        ? `<p class="accommodation-decision-note">${escapeHtml(city.note_pl)}</p>`
+        : "";
+
+      const optionsClass = isConfirmed ? "accommodation-options" : "accommodation-options accommodation-options--compare";
       const options = city.options
         .map(
           (opt) => `
@@ -212,10 +231,17 @@
         </div>`
         )
         .join("");
+
       card.innerHTML = `
-        <div class="accommodation-city__name">${escapeHtml(city.city)}</div>
-        <div class="accommodation-city__nights">${escapeHtml(city.nights)}</div>
-        ${options}
+        <div class="accommodation-city__top">
+          <div>
+            <div class="accommodation-city__name">${escapeHtml(city.city)}</div>
+            <div class="accommodation-city__nights">${escapeHtml(city.nights)}</div>
+          </div>
+          ${statusBadge}
+        </div>
+        ${notePlHtml}
+        <div class="${optionsClass}">${options}</div>
       `;
       container.appendChild(card);
     });
@@ -225,9 +251,9 @@
     const container = document.getElementById("info-content");
     const { practical_info, weather_snapshot } = state.data;
 
-    let html = `<p class="info-disclaimer">📅 Migawka danych sprzed wyjazdu (pobrana ${escapeHtml(
+    let html = `<p class="info-disclaimer">📅 Prognoza pobrana ${escapeHtml(
       weather_snapshot.fetched_on
-    )}). ${escapeHtml(weather_snapshot.disclaimer)}</p>`;
+    )}${weather_snapshot.source ? ` (${escapeHtml(weather_snapshot.source)})` : ""}. ${escapeHtml(weather_snapshot.disclaimer)}</p>`;
 
     html += `<h3>Praktyczne info</h3><ul>`;
     practical_info.forEach((item) => {
@@ -235,24 +261,29 @@
     });
     html += `</ul>`;
 
-    html += renderWeatherBlock("Interlaken", weather_snapshot.interlaken);
-    html += renderWeatherBlock("Bazylea", weather_snapshot.basel);
+    html += renderWeatherBlock(weather_snapshot.forecast);
 
     container.innerHTML = html;
   }
 
-  function renderWeatherBlock(cityName, days) {
-    const cells = days
+  function renderWeatherBlock(forecast) {
+    const cells = forecast
       .map(
-        (d) => `
-      <div class="weather-day">
-        <span class="weather-day__date">${escapeHtml(formatDateShort(d.date))}</span>
-        <span class="weather-day__temp">${d.high_f}° / ${d.low_f}°F</span>
-        <span class="weather-day__rain">💧 ${d.rain_chance}%</span>
+        (f) => `
+      <div class="weather-slot">
+        <div class="weather-slot__top">
+          <span class="weather-slot__place">${escapeHtml(f.location)}</span>
+          <span class="weather-slot__when">${escapeHtml(formatDateShort(f.date))} · ${escapeHtml(f.time)}</span>
+        </div>
+        <div class="weather-slot__readings">
+          <span class="weather-slot__temp">${f.temp_c}°C</span>
+          <span class="weather-slot__rain">💧 ${f.rain_chance}%</span>
+        </div>
+        ${f.note ? `<span class="weather-slot__note">${escapeHtml(f.note)}</span>` : ""}
       </div>`
       )
       .join("");
-    return `<h3>Pogoda — ${escapeHtml(cityName)}</h3><div class="weather-grid">${cells}</div>`;
+    return `<h3>Pogoda w trasie</h3><div class="weather-list">${cells}</div>`;
   }
 
   function formatDate(iso) {

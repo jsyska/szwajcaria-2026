@@ -291,6 +291,34 @@ h1, h2, h3 {
   line-height: 1.35;
 }
 
+.stop-card__ticket {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.65rem;
+  padding: 0.5rem 0.65rem;
+  background: var(--turquoise-100);
+  border: 1px solid rgba(30, 126, 140, 0.25);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--navy-900);
+}
+
+.stop-card__ticket img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex: none;
+  background: #fff;
+}
+
+.stop-card__ticket span {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--turquoise-600);
+}
+
 .stop-card__link {
   display: inline-flex;
   align-items: center;
@@ -338,6 +366,17 @@ h1, h2, h3 {
   border-left: 4px solid var(--turquoise-500);
 }
 
+.accommodation-city--open {
+  border-left-color: var(--gold-500);
+}
+
+.accommodation-city__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
 .accommodation-city__name {
   font-size: 1rem;
   font-weight: 700;
@@ -351,24 +390,76 @@ h1, h2, h3 {
   margin: 0.15rem 0 0.6rem;
 }
 
+.accommodation-status {
+  flex: none;
+  font-size: 0.72rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  white-space: nowrap;
+}
+
+.accommodation-status--confirmed {
+  background: var(--turquoise-100);
+  color: var(--turquoise-600);
+}
+
+.accommodation-status--open {
+  background: var(--amber-warn-bg);
+  color: var(--amber-warn-text);
+}
+
+.accommodation-decision-note {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  background: var(--cream-100);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.7rem;
+  margin: 0.7rem 0 0.2rem;
+  line-height: 1.4;
+}
+
+.accommodation-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.accommodation-options--compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.6rem;
+  margin-top: 0.7rem;
+}
+
+.accommodation-options--compare .accommodation-option {
+  border-top: none;
+  border: 1px solid rgba(11, 36, 61, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 0.7rem;
+  background: var(--cream-50);
+}
+
 .accommodation-option {
   padding: 0.4rem 0;
   border-top: 1px dashed rgba(11, 36, 61, 0.12);
   font-size: 0.88rem;
 }
 
-.accommodation-option:first-of-type {
+.accommodation-options:not(.accommodation-options--compare) .accommodation-option:first-of-type {
   border-top: none;
 }
 
 .accommodation-option__name {
   font-weight: 700;
   color: var(--ink);
+  display: block;
 }
 
 .accommodation-option__note {
   color: var(--ink-soft);
   display: block;
+  font-size: 0.82rem;
+  margin-top: 0.15rem;
 }
 
 /* ---------------- Info (collapsible) ---------------- */
@@ -436,39 +527,64 @@ details[open] .chevron {
   margin-bottom: 0.45rem;
 }
 
-.weather-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.4rem;
+.weather-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.weather-day {
+.weather-slot {
   background: var(--turquoise-100);
   border-radius: var(--radius-sm);
-  padding: 0.5rem 0.3rem;
-  text-align: center;
+  padding: 0.55rem 0.7rem;
 }
 
-.weather-day__date {
-  font-size: 0.68rem;
-  font-weight: 700;
-  color: var(--turquoise-600);
-  display: block;
+.weather-slot__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.weather-day__temp {
+.weather-slot__place {
   font-size: 0.82rem;
   font-weight: 700;
   color: var(--navy-900);
-  display: block;
-  margin-top: 0.15rem;
 }
 
-.weather-day__rain {
-  font-size: 0.7rem;
+.weather-slot__when {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--turquoise-600);
+  white-space: nowrap;
+}
+
+.weather-slot__readings {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin-top: 0.25rem;
+}
+
+.weather-slot__temp {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+.weather-slot__rain {
+  font-size: 0.78rem;
   color: var(--ink-soft);
+}
+
+.weather-slot__note {
   display: block;
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  margin-top: 0.25rem;
+  font-style: italic;
 }
 
 /* ---------------- Footer ---------------- */
@@ -498,9 +614,6 @@ details[open] .chevron {
 @media (max-width: 360px) {
   .app-header__title {
     font-size: 1.4rem;
-  }
-  .weather-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 

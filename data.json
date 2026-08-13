@@ -12,8 +12,12 @@
       "note": "wylot z Basel EuroAirport (BSL) 8:10"
     },
     "car_rental": {
-      "pickup": "Basel EuroAirport, piątek rano po lądowaniu",
-      "dropoff": "rekomendacja: niedziela wieczór w Bazylei (taniej, bez stresu o wczesną godzinę w poniedziałek); alternatywa: poniedziałek ok. 6:00-6:30 jeśli stacja ma wtedy obsługę lub skrzynkę na klucze",
+      "status": "confirmed",
+      "vehicle": "BMW 1 Series lub podobny (Sedan, kod SIPP: DDAR)",
+      "pickup": "Basel EuroAirport (BSL), piątek 14.08 ok. 8:30",
+      "dropoff": "Basel EuroAirport (BSL), poniedziałek 17.08 ok. 6:00",
+      "price_pln": 2118,
+      "protection": "All Inclusive (pełna ochrona)",
       "vignette_chf": 40,
       "vignette_note": "winieta na autostrady obowiązkowa; przy wynajmie w Szwajcarii zwykle jest już naklejona na szybie — potwierdzić przy odbiorze"
     }
@@ -23,58 +27,79 @@
       "id": "day1",
       "date": "2026-08-14",
       "weekday": "Piątek",
-      "label": "Kandersteg i dolina Lauterbrunnen",
-      "base_note": "Nocleg: Interlaken / Wilderswil (2 noce)",
+      "label": "Lauterbrunnen i Kandersteg",
+      "base_note": "Nocleg: Hotel Kreuz, Leissigen (2 noce)",
       "stops": [
         {
           "time": "7:35",
           "name": "Lądowanie – Basel EuroAirport (BSL)",
           "lat": 47.5896,
           "lon": 7.5299,
-          "description": "Odbiór wynajętego auta, sprawdzenie winiety na szybie.",
+          "description": "Odbiór wynajętego auta (BMW 1 Series), sprawdzenie winiety na szybie.",
           "link": "",
           "notes": "",
           "skip_photo": true
         },
         {
-          "time": "~10:15",
-          "name": "Kandersteg – gondola na Oeschinensee",
-          "lat": 46.4939,
-          "lon": 7.6772,
-          "description": "Przejazd z lotniska ok. 1h45–1h50. Kolejka gondolowa wywozi na wysokość 1578 m w kilkanaście minut.",
-          "link": "https://www.oeschinensee.ch/en/",
-          "notes": "WAŻNE: od 20.06 do 20.09.2026 wymagana rezerwacja konkretnego slotu czasowego na wjazd (boarding pass) — kupić z wyprzedzeniem na oeschinensee.ch. Bilet powrotny ok. 40 CHF/os w sezonie letnim.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Kandersteg_Church.jpg/330px-Kandersteg_Church.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-        },
-        {
-          "time": "11:00–13:00",
-          "name": "Oeschinensee (jezioro)",
-          "lat": 46.501,
-          "lon": 7.7222,
-          "description": "Spacer 20–30 min od górnej stacji szeroką, płaską ścieżką. Turkusowa woda, restauracja nad brzegiem, wypożyczalnia łódek.",
-          "link": "https://www.oeschinensee.ch/en/",
-          "notes": "",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/20190725_Oeschinensee-Panorama%2C_Kandersteg_%2806540-42_stitch%29.jpg/330px-20190725_Oeschinensee-Panorama%2C_Kandersteg_%2806540-42_stitch%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-        },
-        {
-          "time": "~14:15",
+          "time": "~10:00-10:30",
           "name": "Lauterbrunnen – Staubbachfall",
           "lat": 46.5934,
           "lon": 7.9068,
           "description": "Parking w centrum wioski. Kilka minut spaceru zwykłym chodnikiem do podnóża wodospadu widocznego wprost z głównej drogi.",
           "link": "",
-          "notes": "Dojazd z Kandersteg ok. 35-40 min",
+          "notes": "Dojazd z lotniska w Bazylei ok. 1h35–1h45.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Lauterbrunnen_Staubbach.jpg/330px-Lauterbrunnen_Staubbach.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
-          "time": "15:00–17:00",
-          "name": "Dolina Lauterbrunnen – Wengen lub Trümmelbachfälle (opcjonalnie)",
-          "lat": 46.6053,
-          "lon": 7.9218,
-          "description": "Wengen: kolejka zębata z Lauterbrunnen (ok. 14 min), widokowa, bezsamochodowa wioska z widokiem na Jungfrau. Alternatywa: Trümmelbachfälle — wodospady wewnątrz góry (lat 46.5766, lon 7.9066).",
-          "link": "https://www.jungfrau.ch/en-gb/wengen/",
-          "notes": "Kolej Wengernalpbahn Lauterbrunnen–Wengen: ok. 8 kursów dziennie, przejazd 11-12 min, bilet jednorazowy rzędu 8-10 CHF (sprawdzić aktualną cenę na sbb.ch). Traktować jako opcjonalne — pierwsze do skrócenia, jeśli dzień się przeciąga.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/1_wengen_2012.jpg/330px-1_wengen_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+          "time": "~11:00",
+          "name": "Przejazd do Kandersteg",
+          "lat": 46.4939,
+          "lon": 7.6772,
+          "description": "Jazda samochodem z Lauterbrunnen do Kandersteg.",
+          "link": "",
+          "notes": "",
+          "skip_photo": true
+        },
+        {
+          "time": "~12:00",
+          "name": "Przerwa na kawę / lunch w Kandersteg",
+          "lat": 46.4939,
+          "lon": 7.6772,
+          "description": "Krótki postój w miasteczku przed wjazdem gondolą.",
+          "link": "",
+          "notes": "",
+          "skip_photo": true
+        },
+        {
+          "time": "~13:00",
+          "name": "Kandersteg – gondola na Oeschinensee",
+          "lat": 46.4939,
+          "lon": 7.6772,
+          "description": "Kolejka gondolowa wywozi na wysokość 1578 m w kilkanaście minut.",
+          "link": "https://www.oeschinensee.ch/en/",
+          "notes": "Bilet w obie strony + slot na wjazd już kupiony (ważny 14.08 13:00–14:30, 40 CHF/os) — pokazać QR z potwierdzenia przy wejściu.",
+          "ticket_image": "bilet-oeschinese.jpg",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Kandersteg_Church.jpg/330px-Kandersteg_Church.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "time": "13:00–15:30",
+          "name": "Oeschinensee (jezioro)",
+          "lat": 46.501,
+          "lon": 7.7222,
+          "description": "Spacer 20–30 min od górnej stacji szeroką, płaską ścieżką. Turkusowa woda, restauracja nad brzegiem, wypożyczalnia łódek.",
+          "link": "https://www.oeschinensee.ch/en/",
+          "notes": "Bilety na wjazd już kupione — nie trzeba rezerwować na miejscu.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/20190725_Oeschinensee-Panorama%2C_Kandersteg_%2806540-42_stitch%29.jpg/330px-20190725_Oeschinensee-Panorama%2C_Kandersteg_%2806540-42_stitch%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "time": "~16:00",
+          "name": "Przejazd do hotelu (Leissigen)",
+          "lat": 46.65,
+          "lon": 7.767,
+          "description": "Powrót samochodem z Kandersteg do Hotelu Kreuz w Leissigen, z opcją przejazdu przez Lauterbrunnen, jeśli zostanie czas.",
+          "link": "",
+          "notes": "",
+          "skip_photo": true
         }
       ]
     },
@@ -83,14 +108,14 @@
       "date": "2026-08-15",
       "weekday": "Sobota",
       "label": "Grindelwald First i Brienzersee",
-      "base_note": "Nocleg: Interlaken / Wilderswil (noc 2)",
+      "base_note": "Nocleg: Hotel Kreuz, Leissigen (noc 2)",
       "stops": [
         {
           "time": "9:30",
           "name": "Grindelwald First – gondola",
           "lat": 46.6244,
           "lon": 8.0414,
-          "description": "Przejazd z Interlaken ok. 30 min. Kolejka jedzie przez Bort i Schreckfeld, ok. 25 min na sam szczyt (2168 m).",
+          "description": "Przejazd z Leissigen ok. 40-45 min. Kolejka jedzie przez Bort i Schreckfeld, ok. 25 min na sam szczyt (2168 m).",
           "link": "https://www.grindelwaldfirst.com/first-cliff-walk-tickets",
           "notes": "Parkować przy Grindelwald Terminal + darmowy shuttle do Firstbahn, nie przy samej stacji (mało miejsc w sezonie). Bilet powrotny 2026: 76 CHF (maj-październik).",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Grindelwald_First.jpg/330px-Grindelwald_First.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
@@ -131,7 +156,7 @@
           "lon": 8.0092,
           "description": "14 kaskad wodospadu obok historycznego Grand Hotelu. Zabytkowa kolejka linowo-terenowa z 1879 r. wciąż działa.",
           "link": "https://giessbach.ch/en",
-          "notes": "Dojazd autem bezpośrednio (nie trzeba płynąć statkiem), parking płatny 15 CHF. Kolejka działa kwiecień-październik.",
+          "notes": "Dojazd autem bezpośrednio (nie trzeba płynąć statkiem), parking płatny 15 CHF. Kolejka działa kwiecień-październik. Powrót do hotelu w Leissigen ok. 45-50 min.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Giessbachbahn_2012-08-21_1.jpg/330px-Giessbachbahn_2012-08-21_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         }
       ]
@@ -145,10 +170,10 @@
       "stops": [
         {
           "time": "9:00",
-          "name": "Wymeldowanie z hotelu w Interlaken",
-          "lat": 46.6863,
-          "lon": 7.8632,
-          "description": "",
+          "name": "Wymeldowanie z Hotel Kreuz w Leissigen",
+          "lat": 46.65,
+          "lon": 7.767,
+          "description": "Check-out: 08:00–11:00.",
           "link": "",
           "notes": "Wyższa szansa na deszcz w tym dniu — dobry dzień na atrakcje zadaszone.",
           "skip_photo": true
@@ -160,7 +185,7 @@
           "lon": 8.3079,
           "description": "Kapellbrücke — drewniany, XIV-wieczny most, w dużej mierze zadaszony. Spacer nad brzegiem jeziora i po starówce.",
           "link": "https://www.luzern.com/en/",
-          "notes": "Dojazd z Interlaken ok. 50 min.",
+          "notes": "Dojazd z Leissigen ok. 55-60 min.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/2009_08_24_06262_Lucerne.jpg/330px-2009_08_24_06262_Lucerne.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
@@ -178,7 +203,7 @@
           "name": "Bazylea",
           "lat": 47.5596,
           "lon": 7.5886,
-          "description": "Zwrot auta, krótki spacer nad Renem i starówką, wczesna kolacja.",
+          "description": "Krótki spacer nad Renem i starówką, wczesna kolacja. Auto zostaje na noc — zwrot dopiero w poniedziałek rano.",
           "link": "",
           "notes": "Dojazd z Lucerny ok. 1h, z Zurychu ok. 1h.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basel_-_M%C3%BCnsterpfalz1.jpg/330px-Basel_-_M%C3%BCnsterpfalz1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
@@ -193,13 +218,13 @@
       "base_note": "",
       "stops": [
         {
-          "time": "~6:15",
-          "name": "Dojazd na lotnisko",
+          "time": "~6:00",
+          "name": "Zwrot auta – Basel EuroAirport",
           "lat": 47.5896,
           "lon": 7.5299,
-          "description": "Taxi/Uber z centrum Bazylei, ok. 15-20 min.",
+          "description": "Zwrot wynajętego auta (BMW 1 Series) w tej samej lokalizacji, przejście do odprawy.",
           "link": "",
-          "notes": "Zakłada zwrot auta w niedzielę wieczorem.",
+          "notes": "Sprawdzić dokładne miejsce zwrotu na terenie lotniska.",
           "skip_photo": true
         },
         {
@@ -217,108 +242,107 @@
   ],
   "accommodation": [
     {
-      "city": "Interlaken",
+      "city": "Leissigen",
       "nights": "14–16.08 (2 noce)",
+      "confirmed": true,
       "options": [
         {
-          "name": "Hotel Beausite",
-          "note": "4.4/5 (ok. 980 recenzji), blisko centrum, dobra relacja jakości do ceny"
-        },
-        {
-          "name": "Boutique Hotel Bellevue",
-          "note": "klimatyczny, styl 'romantic', historyczny budynek"
-        },
-        {
-          "name": "Carlton-Europe Vintage Adults Hotel",
-          "note": "tylko dla dorosłych, park z naturalnym stawem kąpielowym"
-        },
-        {
-          "name": "Victoria-Jungfrau Grand Hotel & Spa",
-          "note": "top luksusu w regionie, wysoka cena"
+          "name": "Hotel Kreuz",
+          "note": "Dorfstrasse 32, 3706 Leissigen, Switzerland | Check-in: 16:00 - 22:00 | Check-out: 08:00 - 11:00"
         }
       ]
     },
     {
       "city": "Bazylea",
       "nights": "16–17.08 (1 noc)",
+      "note_pl": "Budżet: 400-600 zł. Decyzja jeszcze otwarta: okolice lotniska (wygodniej na 6:00 zwrot auta i odprawę) czy centrum/starówka (więcej życia na wieczór, ale dojazd do lotniska rano).",
       "options": [
         {
           "name": "Hotel Spalentor Basel",
-          "note": "4.7/5, blisko starówki, dobra cena"
+          "note": "4.7/5, blisko starówki, dobra cena — opcja \"centrum\""
         },
         {
           "name": "Steinenschanze Stadthotel",
-          "note": "4.7/5, kameralny, centralna lokalizacja"
+          "note": "4.7/5, kameralny, centralna lokalizacja — opcja \"centrum\""
         },
         {
           "name": "Hotel Schweizerhof Basel",
-          "note": "4.4/5, klasyczny, blisko dworca"
+          "note": "4.4/5, klasyczny, blisko dworca — opcja \"centrum\""
         }
       ]
     }
   ],
   "weather_snapshot": {
-    "fetched_on": "2026-08-11",
-    "disclaimer": "Migawka prognozy sprzed wyjazdu — sprawdzić aktualną prognozę tuż przed wylotem, nie traktować jako pewnik.",
-    "interlaken": [
+    "fetched_on": "2026-08-13",
+    "source": "Open-Meteo",
+    "disclaimer": "Prognoza pobrana dzień przed wylotem — realny, krótkoterminowy odczyt, ale wciąż może się zmienić. Sprawdź jeszcze raz rano przed wyjściem.",
+    "forecast": [
       {
+        "location": "Kandersteg / Oeschinensee",
         "date": "2026-08-14",
-        "high_f": 84,
-        "low_f": 61,
-        "rain_chance": 15
+        "time": "13:00",
+        "temp_c": 24,
+        "rain_chance": 5,
+        "note": "Słonecznie w górach, bez parasola."
       },
       {
-        "date": "2026-08-15",
-        "high_f": 75,
-        "low_f": 60,
-        "rain_chance": 40
-      },
-      {
-        "date": "2026-08-16",
-        "high_f": 65,
-        "low_f": 58,
-        "rain_chance": 70
-      },
-      {
-        "date": "2026-08-17",
-        "high_f": 60,
-        "low_f": 54,
-        "rain_chance": 45
-      }
-    ],
-    "basel": [
-      {
+        "location": "Leissigen (dojazd do hotelu)",
         "date": "2026-08-14",
-        "high_f": 97,
-        "low_f": 63,
-        "rain_chance": 0
+        "time": "16:00",
+        "temp_c": 33,
+        "rain_chance": 5,
+        "note": "Bardzo gorąco nad jeziorem — zabrać wodę."
       },
       {
+        "location": "Grindelwald First",
         "date": "2026-08-15",
-        "high_f": 86,
-        "low_f": 67,
-        "rain_chance": 45
+        "time": "9:30",
+        "temp_c": 23,
+        "rain_chance": 0,
+        "note": "Chłodniej o poranku na wysokości — przydać się może cienka kurtka."
       },
       {
+        "location": "Bachalpsee / Iseltwald",
+        "date": "2026-08-15",
+        "time": "14:00",
+        "temp_c": 28,
+        "rain_chance": 10,
+        "note": ""
+      },
+      {
+        "location": "Lucerna",
         "date": "2026-08-16",
-        "high_f": 74,
-        "low_f": 64,
-        "rain_chance": 65
+        "time": "10:15",
+        "temp_c": 27,
+        "rain_chance": 45,
+        "note": "Możliwy deszcz — Kapellbrücke jest w dużej mierze zadaszony."
       },
       {
+        "location": "Bazylea (wieczór)",
+        "date": "2026-08-16",
+        "time": "18:00",
+        "temp_c": 29,
+        "rain_chance": 57,
+        "note": ""
+      },
+      {
+        "location": "Bazylea (zwrot auta)",
         "date": "2026-08-17",
-        "high_f": 72,
-        "low_f": 57,
-        "rain_chance": 65
+        "time": "6:00",
+        "temp_c": 20,
+        "rain_chance": 63,
+        "note": "Chłodny, wilgotny poranek — kurtka na lotnisko."
       }
     ]
   },
   "practical_info": [
-    "Oeschinensee: rezerwacja slotu na gondolę OBOWIĄZKOWA 20.06–20.09.2026 — kupić bilet z konkretną godziną z wyprzedzeniem na oeschinensee.ch",
+    "Oeschinensee: bilet na 13:00 (14.08) już kupiony — QR z potwierdzenia pokazać przy wejściu na gondolę.",
     "Grindelwald First: parkować przy Grindelwald Terminal + shuttle, nie przy samej stacji Firstbahn",
     "Giessbach: dojazd autem bezpośrednio, parking płatny 15 CHF",
     "Winieta na autostrady: 40 CHF, zwykle już naklejona na wynajętym aucie w Szwajcarii — potwierdzić przy odbiorze",
-    "Zwrot auta: rekomendacja — niedziela wieczór w Bazylei (taniej, bez presji czasowej rano), w poniedziałek taxi/Uber na lotnisko",
+    "Wynajem auta: BMW 1 Series (lub podobny), odbiór pt 14.08 ok. 8:30 (Basel EuroAirport), zwrot pn 17.08 ok. 6:00 (tam samo) — potwierdzić przed wyjazdem dokładne miejsce zwrotu",
+    "Nocleg 14-16.08: Hotel Kreuz w Leissigen (nad Thunersee) — potwierdzone, check-in 16:00-22:00, check-out 08:00-11:00",
+    "Nocleg 16-17.08 w Bazylei: budżet 400-600 zł, decyzja otwarta między okolicą lotniska a centrum/starówką",
     "Iseltwald: opłata 5 CHF za wejście na molo, w środku dnia bardzo tłoczno — rano wyraźnie spokojniej"
   ]
 }

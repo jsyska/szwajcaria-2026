@@ -20,10 +20,9 @@ HEADERS = {"User-Agent": "TripPlanBaselBuildScript/1.0 (personal trip site build
 
 # (day_id, stop index) -> list of Wikipedia page titles to try, in order
 WIKI_LOOKUPS = {
-    ("day1", 1): ["Kandersteg"],
-    ("day1", 2): ["Oeschinen_Lake"],
-    ("day1", 3): ["Staubbach_Falls"],
-    ("day1", 4): ["Wengen"],
+    ("day1", 1): ["Staubbach_Falls"],
+    ("day1", 4): ["Kandersteg"],
+    ("day1", 5): ["Oeschinen_Lake"],
     ("day2", 0): ["First_(Grindelwald)"],
     ("day2", 1): ["First_Cliff_Walk"],
     ("day2", 2): ["Bachalpsee"],
@@ -36,17 +35,24 @@ WIKI_LOOKUPS = {
 
 # Links verified by hand against the official sites (see chat/build notes)
 LINK_OVERRIDES = {
-    ("day1", 4): "https://www.jungfrau.ch/en-gb/wengen/",
     ("day3", 1): "https://www.luzern.com/en/",
     ("day3", 2): "https://www.zuerich.com/en",
 }
 
-# Pure logistics stops (airport / check-in-out) never get a photo or placeholder card
+# Pure logistics stops (airport / check-in-out / drives / breaks) never get a photo or placeholder card
 LOGISTICS_ONLY = {
     ("day1", 0),
+    ("day1", 2),
+    ("day1", 3),
+    ("day1", 6),
     ("day3", 0),
     ("day4", 0),
     ("day4", 1),
+}
+
+# Purchased-ticket photos (e.g. boarding pass QR screenshots) attached to a specific stop
+TICKET_IMAGES = {
+    ("day1", 4): "bilet-oeschinese.jpg",
 }
 
 
@@ -81,6 +87,8 @@ def main():
                 stop["link"] = LINK_OVERRIDES[key]
             if key in LOGISTICS_ONLY:
                 stop["skip_photo"] = True
+            if key in TICKET_IMAGES:
+                stop["ticket_image"] = TICKET_IMAGES[key]
             if key in WIKI_LOOKUPS:
                 image = fetch_wiki_image(WIKI_LOOKUPS[key])
                 if image:
