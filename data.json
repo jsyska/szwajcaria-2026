@@ -20,6 +20,81 @@
       "protection": "All Inclusive (pełna ochrona)",
       "vignette_chf": 40,
       "vignette_note": "winieta na autostrady obowiązkowa; przy wynajmie w Szwajcarii zwykle jest już naklejona na szybie — potwierdzić przy odbiorze"
+    },
+    "emergency_contacts": [
+      {
+        "label": "🚑 Pogotowie (CH)",
+        "number": "144"
+      },
+      {
+        "label": "🚒 Straż pożarna (CH)",
+        "number": "118"
+      },
+      {
+        "label": "👮 Policja (CH)",
+        "number": "117"
+      },
+      {
+        "label": "🆘 Ratownictwo górskie (CH)",
+        "number": "1414"
+      },
+      {
+        "label": "🏨 Hotel Kreuz Leissigen",
+        "number": "+41 33 847 12 22"
+      },
+      {
+        "label": "🏨 B&B Hotel Hésingue",
+        "number": "+33 3 89 70 03 03"
+      },
+      {
+        "label": "🚗 Europcar (wypożyczalnia)",
+        "number": "+41 61 325 35 40"
+      }
+    ],
+    "currency_info": {
+      "note": "Szwajcaria używa CHF (frank szwajcarski). Hotel B&B jest we Francji — tam płacicie w EUR. Karty Visa/Mastercard akceptowane wszędzie, ale miej trochę gotówki CHF na parkingi i molo.",
+      "rate_approx": "1 CHF ≈ 4,60–4,80 zł (sierpień 2026)"
+    },
+    "cash_budget": {
+      "note": "Szacowane wydatki gotówkowe w CHF (na osobę lub łącznie):",
+      "items": [
+        {
+          "label": "Parking Lauterbrunnen",
+          "amount": "~4 CHF/h",
+          "per": "para"
+        },
+        {
+          "label": "Parking Kandersteg (gondola)",
+          "amount": "~10–15 CHF",
+          "per": "para"
+        },
+        {
+          "label": "Oeschinensee gondola",
+          "amount": "40 CHF/os",
+          "per": "osobę",
+          "paid": true
+        },
+        {
+          "label": "Parking Grindelwald Terminal",
+          "amount": "~10 CHF",
+          "per": "para"
+        },
+        {
+          "label": "Gondola Grindelwald First",
+          "amount": "76 CHF/os",
+          "per": "osobę"
+        },
+        {
+          "label": "Iseltwald — molo",
+          "amount": "5 CHF/os",
+          "per": "osobę"
+        },
+        {
+          "label": "Parking Giessbach",
+          "amount": "15 CHF",
+          "per": "para"
+        }
+      ]
     }
   },
   "days": [
@@ -130,7 +205,18 @@
       "weekday": "Sobota",
       "label": "Grindelwald First i Brienzersee",
       "base_note": "Nocleg: Hotel Kreuz, Leissigen (noc 2)",
+      "plan_b": "Jeśli mgła lub deszcz na First: pomiń gondolę — jedź do Iseltwald (otwarte przy każdej pogodzie) i Giessbach, a czas wolny wypełnij spacerem w Grindelwald lub wizytą w centrum Interlaken.",
       "stops": [
+        {
+          "time": "8:15",
+          "name": "Wyjazd z hotelu – Hotel Kreuz, Leissigen",
+          "lat": 46.65,
+          "lon": 7.767,
+          "description": "Śniadanie i wyjazd. Masz ok. 40 min do Grindelwald Terminal — ruszaj punktualnie, żeby zdążyć na gondolę o 9:30.",
+          "link": "",
+          "notes": "",
+          "skip_photo": true
+        },
         {
           "time": "8:30–9:15",
           "name": "Przejazd: Hotel → Grindelwald Terminal",
@@ -269,9 +355,10 @@
           "name": "Lucerna",
           "lat": 47.0505,
           "lon": 8.3079,
-          "description": "Kapellbrücke — drewniany, XIV-wieczny most, w dużej mierze zadaszony. Spacer nad brzegiem jeziora i po starówce.",
+          "description": "Kapellbrücke — drewniany, XIV-wieczny most, w dużej mierze zadaszony. Spacer nad brzegiem jeziora i po starówce. Masz ok. 2h na zwiedzanie.",
           "link": "https://www.luzern.com/en/",
-          "notes": "Dojazd z Leissigen ok. 55-60 min.",
+          "notes": "Dojazd z Leissigen ok. 55-60 min. Wyjazd w stronę Zurychu lub Bazylei ok. 12:15.",
+          "food_tip": "Obiad w Lucernie: polecany Rathaus Brauerei (kuchnia szwajcarska, nad rzeką Reuss) lub szybciej — piekarnie i food-trucky przy deptaku.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/2009_08_24_06262_Lucerne.jpg/330px-2009_08_24_06262_Lucerne.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {

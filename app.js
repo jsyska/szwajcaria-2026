@@ -29,9 +29,13 @@
     renderBookingInfo();
     renderPackingList();
     renderInfo();
+    renderEmergencyContacts();
+    renderCashBudget();
 
-    const firstDay = state.data.days[0].id;
-    activateDay(firstDay);
+    // Auto-select today's day if within trip dates, else first day
+    const today = new Date().toISOString().slice(0, 10);
+    const todayDay = state.data.days.find((d) => d.date === today);
+    activateDay(todayDay ? todayDay.id : state.data.days[0].id);
   }
 
   function renderHeader() {
@@ -81,10 +85,20 @@
       `;
       panel.appendChild(header);
 
+      const planBHtml = day.plan_b
+        ? `<div class="plan-b-banner">🌧️ <strong>Plan B (zła pogoda):</strong> ${escapeHtml(day.plan_b)}</div>`
+        : "";
+
       const mapDiv = document.createElement("div");
       mapDiv.className = "map-container";
       mapDiv.id = `map-${day.id}`;
       panel.appendChild(mapDiv);
+
+      if (day.plan_b) {
+        const planBEl = document.createElement("div");
+        planBEl.innerHTML = planBHtml;
+        panel.appendChild(planBEl.firstElementChild);
+      }
 
       const list = document.createElement("ul");
       list.className = "stops-list";
@@ -110,6 +124,10 @@
 
     const notesHtml = stop.notes
       ? `<p class="stop-card__notes">⚠️ ${escapeHtml(stop.notes)}</p>`
+      : "";
+
+    const foodTipHtml = stop.food_tip
+      ? `<p class="stop-card__food-tip">🍽️ ${escapeHtml(stop.food_tip)}</p>`
       : "";
 
     const descriptionHtml = stop.description
@@ -140,6 +158,7 @@
         </div>
         ${descriptionHtml}
         ${notesHtml}
+        ${foodTipHtml}
         ${directionsHtml}
         ${ticketHtml}
         ${linkHtml}
@@ -334,6 +353,48 @@
         input.closest(".packing-item").classList.toggle("packing-item--checked", input.checked);
       });
     });
+  }
+
+  function renderEmergencyContacts() {
+    const { trip } = state.data;
+    const contacts = trip.emergency_contacts || [];
+    if (!contacts.length) return;
+    const section = document.getElementById("emergency-section");
+    if (!section) return;
+    const list = contacts
+      .map(
+        (c) => `<div class="emergency-item">
+          <span class="emergency-item__label">${escapeHtml(c.label)}</span>
+          <a class="emergency-item__number" href="tel:${escapeAttr(c.number)}">${escapeHtml(c.number)}</a>
+        </div>`
+      )
+      .join("");
+    document.getElementById("emergency-list").innerHTML = list;
+  }
+
+  function renderCashBudget() {
+    const { trip } = state.data;
+    const budget = trip.cash_budget;
+    const currency = trip.currency_info;
+    const container = document.getElementById("cash-budget-content");
+    if (!container || !budget) return;
+
+    let html = "";
+    if (currency) {
+      html += `<p class="currency-note">${escapeHtml(currency.note)}</p>`;
+      html += `<p class="currency-rate">💱 ${escapeHtml(currency.rate_approx)}</p>`;
+    }
+    html += `<p class="cash-note">${escapeHtml(budget.note)}</p>`;
+    html += `<div class="cash-list">`;
+    budget.items.forEach((item) => {
+      const paid = item.paid ? ` <span class="cash-paid">✅ opłacone</span>` : "";
+      html += `<div class="cash-item">
+        <span class="cash-item__label">${escapeHtml(item.label)}</span>
+        <span class="cash-item__amount">${escapeHtml(item.amount)} / ${escapeHtml(item.per)}${paid}</span>
+      </div>`;
+    });
+    html += `</div>`;
+    container.innerHTML = html;
   }
 
   function renderInfo() {

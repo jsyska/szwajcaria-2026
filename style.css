@@ -772,6 +772,146 @@ details[open] .chevron {
   background: var(--cream-200);
 }
 
+.stop-card__food-tip {
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #4a6741;
+  background: #edf5eb;
+  border: 1px solid #b5d6ae;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.65rem;
+  line-height: 1.35;
+}
+
+/* ---------------- Plan B banner ---------------- */
+
+.plan-b-banner {
+  background: linear-gradient(135deg, #e8f0fe, #dbeafe);
+  border: 1px solid #93c5fd;
+  border-radius: var(--radius-sm);
+  padding: 0.7rem 0.9rem;
+  font-size: 0.85rem;
+  color: #1e3a5f;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.plan-b-banner strong {
+  color: #1d4ed8;
+}
+
+/* ---------------- Emergency contacts ---------------- */
+
+.section--emergency,
+.section--budget {
+  padding-top: 0;
+}
+
+.emergency-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.emergency-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.55rem 0.7rem;
+  background: var(--cream-50);
+  border: 1px solid rgba(11, 36, 61, 0.1);
+  border-radius: var(--radius-sm);
+}
+
+.emergency-item__label {
+  font-size: 0.88rem;
+  color: var(--ink);
+}
+
+.emergency-item__number {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--turquoise-600);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.emergency-item__number:active {
+  opacity: 0.7;
+}
+
+/* ---------------- Cash budget ---------------- */
+
+.cash-budget-content {
+  margin-top: 1rem;
+}
+
+.currency-note {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  background: var(--cream-100);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.7rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.45;
+}
+
+.currency-rate {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--turquoise-600);
+  margin-bottom: 0.8rem;
+}
+
+.cash-note {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin-bottom: 0.5rem;
+}
+
+.cash-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cash-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: var(--cream-50);
+  border: 1px solid rgba(11, 36, 61, 0.08);
+  flex-wrap: wrap;
+}
+
+.cash-item__label {
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.cash-item__amount {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--navy-800);
+  white-space: nowrap;
+}
+
+.cash-paid {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--turquoise-600);
+  margin-left: 0.3rem;
+}
+
 /* ---------------- Wider screens ---------------- */
 
 @media (min-width: 640px) {
