@@ -41,31 +41,31 @@
           "skip_photo": true
         },
         {
-          "time": "~10:00-10:30",
+          "time": "10:30–11:35",
           "name": "Lauterbrunnen – Staubbachfall",
           "lat": 46.5934,
           "lon": 7.9068,
-          "description": "Parking w centrum wioski. Kilka minut spaceru zwykłym chodnikiem do podnóża wodospadu widocznego wprost z głównej drogi.",
+          "description": "Czas na dolinę. Macie nieco ponad godzinę. To wystarczy na przejście się pod Staubbachfall (który jest przy samej głównej drodze), zrobienie świetnych zdjęć i szybką kawę. Parking znajduje się w centrum wioski (np. Parking Lauterbrunnen przy stacji kolejowej lub mniejsze parkingi obok wodospadu).",
           "link": "",
-          "notes": "Dojazd z lotniska w Bazylei ok. 1h35–1h45.",
+          "notes": "Dojazd z lotniska w Bazylei ok. 1h35–1h45. Jesteście na miejscu ok. 10:30.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Lauterbrunnen_Staubbach.jpg/330px-Lauterbrunnen_Staubbach.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
-          "time": "~11:00",
+          "time": "11:35",
           "name": "Przejazd do Kandersteg",
           "lat": 46.4939,
           "lon": 7.6772,
-          "description": "Jazda samochodem z Lauterbrunnen do Kandersteg.",
+          "description": "Wyjazd z Lauterbrunnen w stronę Kandersteg (ok. 35-40 minut jazdy samochodem).",
           "link": "",
           "notes": "",
           "skip_photo": true
         },
         {
-          "time": "~12:00",
-          "name": "Przerwa na kawę / lunch w Kandersteg",
+          "time": "~12:15",
+          "name": "Kandersteg – parking i przygotowanie do wjazdu",
           "lat": 46.4939,
           "lon": 7.6772,
-          "description": "Krótki postój w miasteczku przed wjazdem gondolą.",
+          "description": "Macie aż 45 minut zapasu na znalezienie wolnego miejsca parkingowego (główny, duży parking płatny znajduje się przy samej stacji gondoli), skorzystanie z toalety, ewentualne kupienie wody i spokojne dojście do stacji kolejki.",
           "link": "",
           "notes": "",
           "skip_photo": true
@@ -165,8 +165,8 @@
       "id": "day3",
       "date": "2026-08-16",
       "weekday": "Niedziela",
-      "label": "Lucerna, (opcjonalnie Zurych) i powrót do Bazylei",
-      "base_note": "Wymeldowanie rano, nocleg: Bazylea (1 noc)",
+      "label": "Lucerna, (opcjonalnie Zurych) i powrót w okolice Bazylei",
+      "base_note": "Wymeldowanie rano, nocleg: B&B HOTEL Mulhouse Bâle Aéroport (Hésingue)",
       "stops": [
         {
           "time": "9:00",
@@ -253,21 +253,13 @@
       ]
     },
     {
-      "city": "Bazylea",
+      "city": "Bâle Aéroport (Hésingue)",
       "nights": "16–17.08 (1 noc)",
-      "note_pl": "Budżet: 400-600 zł. Decyzja jeszcze otwarta: okolice lotniska (wygodniej na 6:00 zwrot auta i odprawę) czy centrum/starówka (więcej życia na wieczór, ale dojazd do lotniska rano).",
+      "confirmed": true,
       "options": [
         {
-          "name": "Hotel Spalentor Basel",
-          "note": "4.7/5, blisko starówki, dobra cena — opcja \"centrum\""
-        },
-        {
-          "name": "Steinenschanze Stadthotel",
-          "note": "4.7/5, kameralny, centralna lokalizacja — opcja \"centrum\""
-        },
-        {
-          "name": "Hotel Schweizerhof Basel",
-          "note": "4.4/5, klasyczny, blisko dworca — opcja \"centrum\""
+          "name": "B&B HOTEL Mulhouse Bâle Aéroport",
+          "note": "32 Rue du Loup, 68220 Hésingue, France | Check-in: od 14:00 | Check-out: do 12:00"
         }
       ]
     }
@@ -342,7 +334,7 @@
     "Winieta na autostrady: 40 CHF, zwykle już naklejona na wynajętym aucie w Szwajcarii — potwierdzić przy odbiorze",
     "Wynajem auta: BMW 1 Series (lub podobny), odbiór pt 14.08 ok. 8:30 (Basel EuroAirport), zwrot pn 17.08 ok. 6:00 (tam samo) — potwierdzić przed wyjazdem dokładne miejsce zwrotu",
     "Nocleg 14-16.08: Hotel Kreuz w Leissigen (nad Thunersee) — potwierdzone, check-in 16:00-22:00, check-out 08:00-11:00",
-    "Nocleg 16-17.08 w Bazylei: budżet 400-600 zł, decyzja otwarta między okolicą lotniska a centrum/starówką",
+    "Nocleg 16-17.08: B&B HOTEL Mulhouse Bâle Aéroport (Hésingue, Francja) — potwierdzone, check-in od 14:00, check-out do 12:00",
     "Iseltwald: opłata 5 CHF za wejście na molo, w środku dnia bardzo tłoczno — rano wyraźnie spokojniej"
   ],
   "packing_list": [
