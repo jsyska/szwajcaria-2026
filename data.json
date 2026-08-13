@@ -41,6 +41,15 @@
           "skip_photo": true
         },
         {
+          "time": "8:30–10:30",
+          "name": "Przejazd: Lotnisko → Lauterbrunnen",
+          "lat": 47.085,
+          "lon": 7.72,
+          "description": "Dojazd wynajętym samochodem z lotniska do doliny wodospadów (ok. 1h 40 min, ok. 145 km).",
+          "directions_link": "https://www.google.com/maps/dir/EuroAirport+Basel-Mulhouse-Freiburg/Lauterbrunnen",
+          "skip_photo": true
+        },
+        {
           "time": "10:30–11:35",
           "name": "Lauterbrunnen – Staubbachfall",
           "lat": 46.5934,
@@ -51,13 +60,14 @@
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Lauterbrunnen_Staubbach.jpg/330px-Lauterbrunnen_Staubbach.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
-          "time": "11:35",
+          "time": "11:35–12:15",
           "name": "Przejazd do Kandersteg",
           "lat": 46.4939,
           "lon": 7.6772,
           "description": "Wyjazd z Lauterbrunnen w stronę Kandersteg (ok. 35-40 minut jazdy samochodem).",
           "link": "",
           "notes": "",
+          "directions_link": "https://www.google.com/maps/dir/Lauterbrunnen/Kandersteg",
           "skip_photo": true
         },
         {
@@ -92,13 +102,14 @@
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/20190725_Oeschinensee-Panorama%2C_Kandersteg_%2806540-42_stitch%29.jpg/330px-20190725_Oeschinensee-Panorama%2C_Kandersteg_%2806540-42_stitch%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
-          "time": "~16:00",
+          "time": "15:30–16:00",
           "name": "Przejazd do hotelu (Leissigen)",
           "lat": 46.65,
           "lon": 7.767,
           "description": "Powrót samochodem z Kandersteg do Hotelu Kreuz w Leissigen, z opcją przejazdu przez Lauterbrunnen, jeśli zostanie czas.",
           "link": "",
           "notes": "",
+          "directions_link": "https://www.google.com/maps/dir/Kandersteg/Hotel+Kreuz,+Leissigen",
           "skip_photo": true
         }
       ]
@@ -110,6 +121,15 @@
       "label": "Grindelwald First i Brienzersee",
       "base_note": "Nocleg: Hotel Kreuz, Leissigen (noc 2)",
       "stops": [
+        {
+          "time": "8:30–9:15",
+          "name": "Przejazd: Hotel → Grindelwald Terminal",
+          "lat": 46.62,
+          "lon": 7.95,
+          "description": "Dojazd z Leissigen na główny parking Grindelwald Terminal (ok. 40 min, 35 km).",
+          "directions_link": "https://www.google.com/maps/dir/Hotel+Kreuz,+Leissigen/Grindelwald+Terminal",
+          "skip_photo": true
+        },
         {
           "time": "9:30",
           "name": "Grindelwald First – gondola",
@@ -140,6 +160,15 @@
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bachalpsee_reflection.jpg/330px-Bachalpsee_reflection.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
+          "time": "13:20–14:00",
+          "name": "Przejazd: Grindelwald → Iseltwald",
+          "lat": 46.65,
+          "lon": 7.98,
+          "description": "Dojazd do wioski Iseltwald (ok. 35 min, 25 km).",
+          "directions_link": "https://www.google.com/maps/dir/Grindelwald+Terminal/Iseltwald",
+          "skip_photo": true
+        },
+        {
           "time": "14:00",
           "name": "Iseltwald",
           "lat": 46.6878,
@@ -150,6 +179,15 @@
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/5902_-_Iseltwald.JPG/330px-5902_-_Iseltwald.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
+          "time": "15:10–15:30",
+          "name": "Przejazd: Iseltwald → Giessbach",
+          "lat": 46.7,
+          "lon": 7.96,
+          "description": "Dojazd z Iseltwald do parkingu przy Grand Hotel Giessbach (ok. 20 min, 15 km).",
+          "directions_link": "https://www.google.com/maps/dir/Iseltwald/Grand+Hotel+Giessbach",
+          "skip_photo": true
+        },
+        {
           "time": "~15:30",
           "name": "Giessbach – wodospad i zabytkowa kolejka",
           "lat": 46.7192,
@@ -158,6 +196,15 @@
           "link": "https://giessbach.ch/en",
           "notes": "Dojazd autem bezpośrednio (nie trzeba płynąć statkiem), parking płatny 15 CHF. Kolejka działa kwiecień-październik. Powrót do hotelu w Leissigen ok. 45-50 min.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Giessbachbahn_2012-08-21_1.jpg/330px-Giessbachbahn_2012-08-21_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "time": "17:30–18:00",
+          "name": "Przejazd: Giessbach → Hotel",
+          "lat": 46.68,
+          "lon": 7.88,
+          "description": "Powrót z Giessbach do hotelu Kreuz w Leissigen (ok. 25 min, 25 km).",
+          "directions_link": "https://www.google.com/maps/dir/Grand+Hotel+Giessbach/Hotel+Kreuz,+Leissigen",
+          "skip_photo": true
         }
       ]
     },
@@ -179,6 +226,15 @@
           "skip_photo": true
         },
         {
+          "time": "9:15–10:15",
+          "name": "Przejazd: Leissigen → Lucerna",
+          "lat": 46.85,
+          "lon": 8.05,
+          "description": "Dojazd samochodem z hotelu do Lucerny (ok. 1h, 60 km).",
+          "directions_link": "https://www.google.com/maps/dir/Hotel+Kreuz,+Leissigen/Lucerne",
+          "skip_photo": true
+        },
+        {
           "time": "~10:15",
           "name": "Lucerna",
           "lat": 47.0505,
@@ -187,6 +243,15 @@
           "link": "https://www.luzern.com/en/",
           "notes": "Dojazd z Leissigen ok. 55-60 min.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/2009_08_24_06262_Lucerne.jpg/330px-2009_08_24_06262_Lucerne.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "time": "12:15–13:00",
+          "name": "Przejazd: Lucerna → Zurych",
+          "lat": 47.2,
+          "lon": 8.4,
+          "description": "Opcjonalny dojazd do Zurychu (ok. 45 min, 52 km).",
+          "directions_link": "https://www.google.com/maps/dir/Lucerne/Zurich",
+          "skip_photo": true
         },
         {
           "time": "opcjonalnie ~13:00",
@@ -199,6 +264,15 @@
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Altstadt_Z%C3%BCrich_2015.jpg/330px-Altstadt_Z%C3%BCrich_2015.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
         },
         {
+          "time": "16:00–17:00",
+          "name": "Przejazd: do Bazylei",
+          "lat": 47.4,
+          "lon": 8.0,
+          "description": "Przejazd z Zurychu/Lucerny do Bazylei na wieczorny spacer (ok. 1h, 85 km z Zurychu).",
+          "directions_link": "https://www.google.com/maps/dir/Zurich/Basel",
+          "skip_photo": true
+        },
+        {
           "time": "Wieczór",
           "name": "Bazylea",
           "lat": 47.5596,
@@ -207,6 +281,15 @@
           "link": "",
           "notes": "Dojazd z Lucerny ok. 1h, z Zurychu ok. 1h.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basel_-_M%C3%BCnsterpfalz1.jpg/330px-Basel_-_M%C3%BCnsterpfalz1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "time": "20:00",
+          "name": "Przejazd: Bazylea → Hotel Lotnisko",
+          "lat": 47.57,
+          "lon": 7.55,
+          "description": "Przejazd z centrum Bazylei do hotelu B&B (ok. 15 min, 10 km).",
+          "directions_link": "https://www.google.com/maps/dir/Basel/B%26B+HOTEL+Mulhouse+B%C3%A2le+A%C3%A9roport",
+          "skip_photo": true
         }
       ]
     },
@@ -217,6 +300,15 @@
       "label": "Powrót",
       "base_note": "",
       "stops": [
+        {
+          "time": "5:45–5:50",
+          "name": "Przejazd: Hotel → Zwrot auta (Lotnisko)",
+          "lat": 47.58,
+          "lon": 7.53,
+          "description": "Szybki przejazd z hotelu na lotnisko (ok. 5 min, 3 km).",
+          "directions_link": "https://www.google.com/maps/dir/B%26B+HOTEL+Mulhouse+B%C3%A2le+A%C3%A9roport/EuroAirport+Basel-Mulhouse-Freiburg",
+          "skip_photo": true
+        },
         {
           "time": "~6:00",
           "name": "Zwrot auta – Basel EuroAirport",

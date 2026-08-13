@@ -120,6 +120,10 @@
       ? `<a class="stop-card__link" href="${escapeAttr(stop.link)}" target="_blank" rel="noopener noreferrer">Więcej info</a>`
       : "";
 
+    const directionsHtml = stop.directions_link
+      ? `<a class="stop-card__directions" href="${escapeAttr(stop.directions_link)}" target="_blank" rel="noopener noreferrer">🗺️ Pokaż trasę (Google Maps)</a>`
+      : "";
+
     const ticketHtml = stop.ticket_image
       ? `<a class="stop-card__ticket" href="${escapeAttr(stop.ticket_image)}" target="_blank" rel="noopener noreferrer">
            <img src="${escapeAttr(stop.ticket_image)}" alt="Bilet – ${escapeAttr(stop.name)}" loading="lazy" />
@@ -136,6 +140,7 @@
         </div>
         ${descriptionHtml}
         ${notesHtml}
+        ${directionsHtml}
         ${ticketHtml}
         ${linkHtml}
       </div>

@@ -753,6 +753,25 @@ details[open] .chevron {
   }
 }
 
+.stop-card__directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.65rem;
+  padding: 0.5rem 0.65rem;
+  background: var(--cream-100);
+  border: 1px solid var(--cream-200);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy-800);
+}
+
+.stop-card__directions:active {
+  background: var(--cream-200);
+}
+
 /* ---------------- Wider screens ---------------- */
 
 @media (min-width: 640px) {

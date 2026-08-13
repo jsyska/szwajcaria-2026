@@ -22,7 +22,6 @@
       "vignette_note": "winieta na autostrady obowiązkowa; przy wynajmie w Szwajcarii zwykle jest już naklejona na szybie — potwierdzić przy odbiorze"
     }
   },
-
   "days": [
     {
       "id": "day1",
@@ -41,6 +40,15 @@
           "notes": ""
         },
         {
+          "time": "8:30–10:30",
+          "name": "Przejazd: Lotnisko → Lauterbrunnen",
+          "lat": 47.085,
+          "lon": 7.72,
+          "description": "Dojazd wynajętym samochodem z lotniska do doliny wodospadów (ok. 1h 40 min, ok. 145 km).",
+          "directions_link": "https://www.google.com/maps/dir/EuroAirport+Basel-Mulhouse-Freiburg/Lauterbrunnen",
+          "skip_photo": true
+        },
+        {
           "time": "10:30–11:35",
           "name": "Lauterbrunnen – Staubbachfall",
           "lat": 46.5934,
@@ -50,13 +58,15 @@
           "notes": "Dojazd z lotniska w Bazylei ok. 1h35–1h45. Jesteście na miejscu ok. 10:30."
         },
         {
-          "time": "11:35",
+          "time": "11:35–12:15",
           "name": "Przejazd do Kandersteg",
           "lat": 46.4939,
           "lon": 7.6772,
           "description": "Wyjazd z Lauterbrunnen w stronę Kandersteg (ok. 35-40 minut jazdy samochodem).",
           "link": "",
-          "notes": ""
+          "notes": "",
+          "directions_link": "https://www.google.com/maps/dir/Lauterbrunnen/Kandersteg",
+          "skip_photo": true
         },
         {
           "time": "~12:15",
@@ -79,24 +89,25 @@
         {
           "time": "13:00–15:30",
           "name": "Oeschinensee (jezioro)",
-          "lat": 46.5010,
+          "lat": 46.501,
           "lon": 7.7222,
           "description": "Spacer 20–30 min od górnej stacji szeroką, płaską ścieżką. Turkusowa woda, restauracja nad brzegiem, wypożyczalnia łódek.",
           "link": "https://www.oeschinensee.ch/en/",
           "notes": "Bilety na wjazd już kupione — nie trzeba rezerwować na miejscu."
         },
         {
-          "time": "~16:00",
+          "time": "15:30–16:00",
           "name": "Przejazd do hotelu (Leissigen)",
-          "lat": 46.650,
+          "lat": 46.65,
           "lon": 7.767,
           "description": "Powrót samochodem z Kandersteg do Hotelu Kreuz w Leissigen, z opcją przejazdu przez Lauterbrunnen, jeśli zostanie czas.",
           "link": "",
-          "notes": ""
+          "notes": "",
+          "directions_link": "https://www.google.com/maps/dir/Kandersteg/Hotel+Kreuz,+Leissigen",
+          "skip_photo": true
         }
       ]
     },
-
     {
       "id": "day2",
       "date": "2026-08-15",
@@ -104,6 +115,15 @@
       "label": "Grindelwald First i Brienzersee",
       "base_note": "Nocleg: Hotel Kreuz, Leissigen (noc 2)",
       "stops": [
+        {
+          "time": "8:30–9:15",
+          "name": "Przejazd: Hotel → Grindelwald Terminal",
+          "lat": 46.62,
+          "lon": 7.95,
+          "description": "Dojazd z Leissigen na główny parking Grindelwald Terminal (ok. 40 min, 35 km).",
+          "directions_link": "https://www.google.com/maps/dir/Hotel+Kreuz,+Leissigen/Grindelwald+Terminal",
+          "skip_photo": true
+        },
         {
           "time": "9:30",
           "name": "Grindelwald First – gondola",
@@ -132,6 +152,15 @@
           "notes": "Tylko jeśli starczy czasu/energii — inaczej pominąć."
         },
         {
+          "time": "13:20–14:00",
+          "name": "Przejazd: Grindelwald → Iseltwald",
+          "lat": 46.65,
+          "lon": 7.98,
+          "description": "Dojazd do wioski Iseltwald (ok. 35 min, 25 km).",
+          "directions_link": "https://www.google.com/maps/dir/Grindelwald+Terminal/Iseltwald",
+          "skip_photo": true
+        },
+        {
           "time": "14:00",
           "name": "Iseltwald",
           "lat": 46.6878,
@@ -141,6 +170,15 @@
           "notes": "Bardzo popularne miejsce (wpływ K-dramy 'Crash Landing on You') — w środku dnia tłoczno, opłata za wejście na molo 5 CHF. Rano jest wyraźnie spokojniej."
         },
         {
+          "time": "15:10–15:30",
+          "name": "Przejazd: Iseltwald → Giessbach",
+          "lat": 46.7,
+          "lon": 7.96,
+          "description": "Dojazd z Iseltwald do parkingu przy Grand Hotel Giessbach (ok. 20 min, 15 km).",
+          "directions_link": "https://www.google.com/maps/dir/Iseltwald/Grand+Hotel+Giessbach",
+          "skip_photo": true
+        },
+        {
           "time": "~15:30",
           "name": "Giessbach – wodospad i zabytkowa kolejka",
           "lat": 46.7192,
@@ -148,10 +186,18 @@
           "description": "14 kaskad wodospadu obok historycznego Grand Hotelu. Zabytkowa kolejka linowo-terenowa z 1879 r. wciąż działa.",
           "link": "https://giessbach.ch/en",
           "notes": "Dojazd autem bezpośrednio (nie trzeba płynąć statkiem), parking płatny 15 CHF. Kolejka działa kwiecień-październik. Powrót do hotelu w Leissigen ok. 45-50 min."
+        },
+        {
+          "time": "17:30–18:00",
+          "name": "Przejazd: Giessbach → Hotel",
+          "lat": 46.68,
+          "lon": 7.88,
+          "description": "Powrót z Giessbach do hotelu Kreuz w Leissigen (ok. 25 min, 25 km).",
+          "directions_link": "https://www.google.com/maps/dir/Grand+Hotel+Giessbach/Hotel+Kreuz,+Leissigen",
+          "skip_photo": true
         }
       ]
     },
-
     {
       "id": "day3",
       "date": "2026-08-16",
@@ -162,11 +208,20 @@
         {
           "time": "9:00",
           "name": "Wymeldowanie z Hotel Kreuz w Leissigen",
-          "lat": 46.650,
+          "lat": 46.65,
           "lon": 7.767,
           "description": "Check-out: 08:00–11:00.",
           "link": "",
           "notes": "Wyższa szansa na deszcz w tym dniu — dobry dzień na atrakcje zadaszone."
+        },
+        {
+          "time": "9:15–10:15",
+          "name": "Przejazd: Leissigen → Lucerna",
+          "lat": 46.85,
+          "lon": 8.05,
+          "description": "Dojazd samochodem z hotelu do Lucerny (ok. 1h, 60 km).",
+          "directions_link": "https://www.google.com/maps/dir/Hotel+Kreuz,+Leissigen/Lucerne",
+          "skip_photo": true
         },
         {
           "time": "~10:15",
@@ -178,6 +233,15 @@
           "notes": "Dojazd z Leissigen ok. 55-60 min."
         },
         {
+          "time": "12:15–13:00",
+          "name": "Przejazd: Lucerna → Zurych",
+          "lat": 47.2,
+          "lon": 8.4,
+          "description": "Opcjonalny dojazd do Zurychu (ok. 45 min, 52 km).",
+          "directions_link": "https://www.google.com/maps/dir/Lucerne/Zurich",
+          "skip_photo": true
+        },
+        {
           "time": "opcjonalnie ~13:00",
           "name": "Zurych",
           "lat": 47.3769,
@@ -187,6 +251,15 @@
           "notes": "Dodaje ok. 45 min jazdy z Lucerny + 1h z powrotem do Bazylei. Wyłącznie jeśli czas i pogoda pozwolą — priorytetem jest spokojny wieczór przed wczesnym lotem."
         },
         {
+          "time": "16:00–17:00",
+          "name": "Przejazd: do Bazylei",
+          "lat": 47.4,
+          "lon": 8.0,
+          "description": "Przejazd z Zurychu/Lucerny do Bazylei na wieczorny spacer (ok. 1h, 85 km z Zurychu).",
+          "directions_link": "https://www.google.com/maps/dir/Zurich/Basel",
+          "skip_photo": true
+        },
+        {
           "time": "Wieczór",
           "name": "Bazylea",
           "lat": 47.5596,
@@ -194,10 +267,18 @@
           "description": "Krótki spacer nad Renem i starówką, wczesna kolacja. Auto zostaje na noc — zwrot dopiero w poniedziałek rano.",
           "link": "",
           "notes": "Dojazd z Lucerny ok. 1h, z Zurychu ok. 1h."
+        },
+        {
+          "time": "20:00",
+          "name": "Przejazd: Bazylea → Hotel Lotnisko",
+          "lat": 47.57,
+          "lon": 7.55,
+          "description": "Przejazd z centrum Bazylei do hotelu B&B (ok. 15 min, 10 km).",
+          "directions_link": "https://www.google.com/maps/dir/Basel/B%26B+HOTEL+Mulhouse+B%C3%A2le+A%C3%A9roport",
+          "skip_photo": true
         }
       ]
     },
-
     {
       "id": "day4",
       "date": "2026-08-17",
@@ -205,6 +286,15 @@
       "label": "Powrót",
       "base_note": "",
       "stops": [
+        {
+          "time": "5:45–5:50",
+          "name": "Przejazd: Hotel → Zwrot auta (Lotnisko)",
+          "lat": 47.58,
+          "lon": 7.53,
+          "description": "Szybki przejazd z hotelu na lotnisko (ok. 5 min, 3 km).",
+          "directions_link": "https://www.google.com/maps/dir/B%26B+HOTEL+Mulhouse+B%C3%A2le+A%C3%A9roport/EuroAirport+Basel-Mulhouse-Freiburg",
+          "skip_photo": true
+        },
         {
           "time": "~6:00",
           "name": "Zwrot auta – Basel EuroAirport",
@@ -226,14 +316,16 @@
       ]
     }
   ],
-
   "accommodation": [
     {
       "city": "Leissigen",
       "nights": "14–16.08 (2 noce)",
       "confirmed": true,
       "options": [
-        {"name": "Hotel Kreuz", "note": "Dorfstrasse 32, 3706 Leissigen, Switzerland | Check-in: 16:00 - 22:00 | Check-out: 08:00 - 11:00"}
+        {
+          "name": "Hotel Kreuz",
+          "note": "Dorfstrasse 32, 3706 Leissigen, Switzerland | Check-in: 16:00 - 22:00 | Check-out: 08:00 - 11:00"
+        }
       ]
     },
     {
@@ -241,26 +333,76 @@
       "nights": "16–17.08 (1 noc)",
       "confirmed": true,
       "options": [
-        {"name": "B&B HOTEL Mulhouse Bâle Aéroport", "note": "32 Rue du Loup, 68220 Hésingue, France | Check-in: od 14:00 | Check-out: do 12:00"}
+        {
+          "name": "B&B HOTEL Mulhouse Bâle Aéroport",
+          "note": "32 Rue du Loup, 68220 Hésingue, France | Check-in: od 14:00 | Check-out: do 12:00"
+        }
       ]
     }
   ],
-
   "weather_snapshot": {
     "fetched_on": "2026-08-13",
     "source": "Open-Meteo",
     "disclaimer": "Prognoza pobrana dzień przed wylotem — realny, krótkoterminowy odczyt, ale wciąż może się zmienić. Sprawdź jeszcze raz rano przed wyjściem.",
     "forecast": [
-      {"location": "Kandersteg / Oeschinensee", "date": "2026-08-14", "time": "13:00", "temp_c": 24, "rain_chance": 5, "note": "Słonecznie w górach, bez parasola."},
-      {"location": "Leissigen (dojazd do hotelu)", "date": "2026-08-14", "time": "16:00", "temp_c": 33, "rain_chance": 5, "note": "Bardzo gorąco nad jeziorem — zabrać wodę."},
-      {"location": "Grindelwald First", "date": "2026-08-15", "time": "9:30", "temp_c": 23, "rain_chance": 0, "note": "Chłodniej o poranku na wysokości — przydać się może cienka kurtka."},
-      {"location": "Bachalpsee / Iseltwald", "date": "2026-08-15", "time": "14:00", "temp_c": 28, "rain_chance": 10, "note": ""},
-      {"location": "Lucerna", "date": "2026-08-16", "time": "10:15", "temp_c": 27, "rain_chance": 45, "note": "Możliwy deszcz — Kapellbrücke jest w dużej mierze zadaszony."},
-      {"location": "Bazylea (wieczór)", "date": "2026-08-16", "time": "18:00", "temp_c": 29, "rain_chance": 57, "note": ""},
-      {"location": "Bazylea (zwrot auta)", "date": "2026-08-17", "time": "6:00", "temp_c": 20, "rain_chance": 63, "note": "Chłodny, wilgotny poranek — kurtka na lotnisko."}
+      {
+        "location": "Kandersteg / Oeschinensee",
+        "date": "2026-08-14",
+        "time": "13:00",
+        "temp_c": 24,
+        "rain_chance": 5,
+        "note": "Słonecznie w górach, bez parasola."
+      },
+      {
+        "location": "Leissigen (dojazd do hotelu)",
+        "date": "2026-08-14",
+        "time": "16:00",
+        "temp_c": 33,
+        "rain_chance": 5,
+        "note": "Bardzo gorąco nad jeziorem — zabrać wodę."
+      },
+      {
+        "location": "Grindelwald First",
+        "date": "2026-08-15",
+        "time": "9:30",
+        "temp_c": 23,
+        "rain_chance": 0,
+        "note": "Chłodniej o poranku na wysokości — przydać się może cienka kurtka."
+      },
+      {
+        "location": "Bachalpsee / Iseltwald",
+        "date": "2026-08-15",
+        "time": "14:00",
+        "temp_c": 28,
+        "rain_chance": 10,
+        "note": ""
+      },
+      {
+        "location": "Lucerna",
+        "date": "2026-08-16",
+        "time": "10:15",
+        "temp_c": 27,
+        "rain_chance": 45,
+        "note": "Możliwy deszcz — Kapellbrücke jest w dużej mierze zadaszony."
+      },
+      {
+        "location": "Bazylea (wieczór)",
+        "date": "2026-08-16",
+        "time": "18:00",
+        "temp_c": 29,
+        "rain_chance": 57,
+        "note": ""
+      },
+      {
+        "location": "Bazylea (zwrot auta)",
+        "date": "2026-08-17",
+        "time": "6:00",
+        "temp_c": 20,
+        "rain_chance": 63,
+        "note": "Chłodny, wilgotny poranek — kurtka na lotnisko."
+      }
     ]
   },
-
   "practical_info": [
     "Oeschinensee: bilet na 13:00 (14.08) już kupiony — QR z potwierdzenia pokazać przy wejściu na gondolę.",
     "Grindelwald First: parkować przy Grindelwald Terminal + shuttle, nie przy samej stacji Firstbahn",
@@ -271,7 +413,6 @@
     "Nocleg 16-17.08: B&B HOTEL Mulhouse Bâle Aéroport (Hésingue, Francja) — potwierdzone, check-in od 14:00, check-out do 12:00",
     "Iseltwald: opłata 5 CHF za wejście na molo, w środku dnia bardzo tłoczno — rano wyraźnie spokojniej"
   ],
-
   "packing_list": [
     {
       "category": "Dokumenty i portfel",
@@ -316,36 +457,85 @@
       ]
     }
   ],
-
   "booking_info": [
     {
       "day": "Sobota — Grindelwald First",
       "items": [
-        {"name": "Gondola Grindelwald → First", "cost": "ok. 76 CHF/os (bilet w dwie strony)", "action": "Rekomendacja: kupić online wcześniej na grindelwaldfirst.com, żeby w sezonie ominąć kolejkę do kas na stacji.", "paid": true},
-        {"name": "First Cliff Walk", "cost": "Bezpłatny — wliczony w bilet na gondolę", "action": "", "paid": false},
-        {"name": "Adventure Package (zipline / First Flyer)", "cost": "60-109 CHF, opcjonalnie", "action": "Nie jest konieczny.", "paid": true}
+        {
+          "name": "Gondola Grindelwald → First",
+          "cost": "ok. 76 CHF/os (bilet w dwie strony)",
+          "action": "Rekomendacja: kupić online wcześniej na grindelwaldfirst.com, żeby w sezonie ominąć kolejkę do kas na stacji.",
+          "paid": true
+        },
+        {
+          "name": "First Cliff Walk",
+          "cost": "Bezpłatny — wliczony w bilet na gondolę",
+          "action": "",
+          "paid": false
+        },
+        {
+          "name": "Adventure Package (zipline / First Flyer)",
+          "cost": "60-109 CHF, opcjonalnie",
+          "action": "Nie jest konieczny.",
+          "paid": true
+        }
       ]
     },
     {
       "day": "Sobota — Iseltwald",
       "items": [
-        {"name": "Wejście na molo", "cost": "5 CHF", "action": "Płatne na miejscu przy kołowrotku (karta lub drobne w CHF).", "paid": true},
-        {"name": "Spacer po wiosce i nad jeziorem", "cost": "Bezpłatny", "action": "", "paid": false}
+        {
+          "name": "Wejście na molo",
+          "cost": "5 CHF",
+          "action": "Płatne na miejscu przy kołowrotku (karta lub drobne w CHF).",
+          "paid": true
+        },
+        {
+          "name": "Spacer po wiosce i nad jeziorem",
+          "cost": "Bezpłatny",
+          "action": "",
+          "paid": false
+        }
       ]
     },
     {
       "day": "Sobota — Giessbach",
       "items": [
-        {"name": "Parking", "cost": "ok. 15 CHF", "action": "Płatny na miejscu.", "paid": true},
-        {"name": "Zabytkowa kolejka Giessbachbahn", "cost": "Płatna na miejscu", "action": "Podejście pieszo obok wodospadu jest również możliwe (za darmo).", "paid": true}
+        {
+          "name": "Parking",
+          "cost": "ok. 15 CHF",
+          "action": "Płatny na miejscu.",
+          "paid": true
+        },
+        {
+          "name": "Zabytkowa kolejka Giessbachbahn",
+          "cost": "Płatna na miejscu",
+          "action": "Podejście pieszo obok wodospadu jest również możliwe (za darmo).",
+          "paid": true
+        }
       ]
     },
     {
       "day": "Pozostałe punkty — bezpłatne",
       "items": [
-        {"name": "Lauterbrunnen / Staubbachfall", "cost": "Bezpłatny", "action": "Płacicie jedynie za parking w centrum wioski.", "paid": false},
-        {"name": "Bachalpsee", "cost": "Bezpłatny szlak", "action": "Szlak pieszy z górnej stacji First jest w pełni darmowy.", "paid": false},
-        {"name": "Lucerna, Zurych, Bazylea", "cost": "Bezpłatne", "action": "Spacer po starówkach i przejście mostem Kapellbrücke są bezpłatne.", "paid": false}
+        {
+          "name": "Lauterbrunnen / Staubbachfall",
+          "cost": "Bezpłatny",
+          "action": "Płacicie jedynie za parking w centrum wioski.",
+          "paid": false
+        },
+        {
+          "name": "Bachalpsee",
+          "cost": "Bezpłatny szlak",
+          "action": "Szlak pieszy z górnej stacji First jest w pełni darmowy.",
+          "paid": false
+        },
+        {
+          "name": "Lucerna, Zurych, Bazylea",
+          "cost": "Bezpłatne",
+          "action": "Spacer po starówkach i przejście mostem Kapellbrücke są bezpłatne.",
+          "paid": false
+        }
       ]
     }
   ]

@@ -20,39 +20,39 @@ HEADERS = {"User-Agent": "TripPlanBaselBuildScript/1.0 (personal trip site build
 
 # (day_id, stop index) -> list of Wikipedia page titles to try, in order
 WIKI_LOOKUPS = {
-    ("day1", 1): ["Staubbach_Falls"],
-    ("day1", 4): ["Kandersteg"],
-    ("day1", 5): ["Oeschinen_Lake"],
-    ("day2", 0): ["First_(Grindelwald)"],
-    ("day2", 1): ["First_Cliff_Walk"],
-    ("day2", 2): ["Bachalpsee"],
-    ("day2", 3): ["Iseltwald"],
-    ("day2", 4): ["Giessbachbahn"],
-    ("day3", 1): ["Lucerne"],
-    ("day3", 2): ["Z\u00fcrich"],
-    ("day3", 3): ["Basel"],
+    ("day1", 2): ["Staubbach_Falls"],
+    ("day1", 5): ["Kandersteg"],
+    ("day1", 6): ["Oeschinen_Lake"],
+    ("day2", 1): ["First_(Grindelwald)"],
+    ("day2", 2): ["First_Cliff_Walk"],
+    ("day2", 3): ["Bachalpsee"],
+    ("day2", 5): ["Iseltwald"],
+    ("day2", 7): ["Giessbachbahn"],
+    ("day3", 2): ["Lucerne"],
+    ("day3", 4): ["Z\u00fcrich"],
+    ("day3", 6): ["Basel"],
 }
 
 # Links verified by hand against the official sites (see chat/build notes)
 LINK_OVERRIDES = {
-    ("day3", 1): "https://www.luzern.com/en/",
-    ("day3", 2): "https://www.zuerich.com/en",
+    ("day3", 2): "https://www.luzern.com/en/",
+    ("day3", 4): "https://www.zuerich.com/en",
 }
 
 # Pure logistics stops (airport / check-in-out / drives / breaks) never get a photo or placeholder card
 LOGISTICS_ONLY = {
     ("day1", 0),
-    ("day1", 2),
     ("day1", 3),
-    ("day1", 6),
+    ("day1", 4),
+    ("day1", 7),
     ("day3", 0),
-    ("day4", 0),
     ("day4", 1),
+    ("day4", 2),
 }
 
 # Purchased-ticket photos (e.g. boarding pass QR screenshots) attached to a specific stop
 TICKET_IMAGES = {
-    ("day1", 4): "bilet-oeschinese.jpg",
+    ("day1", 5): "bilet-oeschinese.jpg",
 }
 
 
