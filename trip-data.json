@@ -100,10 +100,20 @@
           "name": "Przejazd do hotelu (Leissigen)",
           "lat": 46.65,
           "lon": 7.767,
-          "description": "Powrót samochodem z Kandersteg do Hotelu Kreuz w Leissigen, z opcją przejazdu przez Lauterbrunnen, jeśli zostanie czas.",
+          "description": "Powrót samochodem z Kandersteg do Hotelu Kreuz w Leissigen (ok. 25 min, 25 km).",
           "link": "",
           "notes": "",
           "directions_link": "https://www.google.com/maps/dir/Kandersteg/Hotel+Kreuz,+Leissigen",
+          "skip_photo": true
+        },
+        {
+          "time": "~16:00",
+          "name": "Check-in – Hotel Kreuz, Leissigen",
+          "lat": 46.65,
+          "lon": 7.767,
+          "description": "Zameldowanie w hotelu. Check-in możliwy od 16:00 do 22:00.",
+          "link": "",
+          "notes": "Dorfstrasse 32, 3706 Leissigen. Macie z góry zarezerwowane 2 noce.",
           "skip_photo": true
         }
       ]
@@ -125,13 +135,23 @@
           "skip_photo": true
         },
         {
-          "time": "9:30",
-          "name": "Grindelwald First – gondola",
+          "time": "9:15–9:30",
+          "name": "Shuttle: Grindelwald Terminal → stacja Firstbahn",
           "lat": 46.6244,
           "lon": 8.0414,
-          "description": "Przejazd z Leissigen ok. 40-45 min. Kolejka jedzie przez Bort i Schreckfeld, ok. 25 min na sam szczyt (2168 m).",
+          "description": "Po zaparkowaniu przy Grindelwald Terminal (parking płatny) wsiąść w darmowy shuttle bus do stacji gondoli Firstbahn (kilka minut jazdy). Bilet kupić przy kasie lub wcześniej online.",
+          "link": "",
+          "notes": "NIE parkować przy samej stacji Firstbahn — mało miejsc w sezonie.",
+          "skip_photo": true
+        },
+        {
+          "time": "9:30",
+          "name": "Grindelwald First – gondola w górę",
+          "lat": 46.6244,
+          "lon": 8.0414,
+          "description": "Kolejka gondolowa jedzie przez Bort i Schreckfeld na szczyt First (2168 m n.p.m.), ok. 25 minut jazdy.",
           "link": "https://www.grindelwaldfirst.com/first-cliff-walk-tickets",
-          "notes": "Parkować przy Grindelwald Terminal + darmowy shuttle do Firstbahn, nie przy samej stacji (mało miejsc w sezonie). Bilet powrotny 2026: 76 CHF (maj-październik)."
+          "notes": "Bilet powrotny 2026: ok. 76 CHF/os (maj-październik)."
         },
         {
           "time": "~10:00",
@@ -150,6 +170,16 @@
           "description": "Łatwy szlak od górnej stacji First do górskiego jeziora z odbiciem szczytów. Ok. 2-2.5h w obie strony.",
           "link": "",
           "notes": "Tylko jeśli starczy czasu/energii — inaczej pominąć."
+        },
+        {
+          "time": "~13:00",
+          "name": "Zejście gondolą z First",
+          "lat": 46.6244,
+          "lon": 8.0414,
+          "description": "Wsiąść w gondolę powrotną na stację Firstbahn (ok. 25 min zjazdu), następnie shuttle powrotny do Grindelwald Terminal po samochód.",
+          "link": "",
+          "notes": "",
+          "skip_photo": true
         },
         {
           "time": "13:20–14:00",
@@ -273,8 +303,18 @@
           "name": "Przejazd: Bazylea → Hotel Lotnisko",
           "lat": 47.57,
           "lon": 7.55,
-          "description": "Przejazd z centrum Bazylei do hotelu B&B (ok. 15 min, 10 km).",
+          "description": "Przejazd z centrum Bazylei do hotelu B&B Hésingue (ok. 15 min, 10 km).",
           "directions_link": "https://www.google.com/maps/dir/Basel/B%26B+HOTEL+Mulhouse+B%C3%A2le+A%C3%A9roport",
+          "skip_photo": true
+        },
+        {
+          "time": "~20:15",
+          "name": "Check-in – B&B HOTEL Mulhouse Bâle Aéroport",
+          "lat": 47.5905,
+          "lon": 7.5401,
+          "description": "Zameldowanie w hotelu przy lotnisku. Check-in możliwy od 14:00. Wczesny sen — lot o 8:10, wymagane wstanie ok. 5:30.",
+          "link": "",
+          "notes": "32 Rue du Loup, 68220 Hésingue, France. Check-out do 12:00.",
           "skip_photo": true
         }
       ]
